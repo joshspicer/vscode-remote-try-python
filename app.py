@@ -4,8 +4,11 @@
 #-----------------------------------------------------------------------------------------
 
 from flask import Flask
+import pandas as pd
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    data = {}
+    arr = pd.DataFrame(data)
     return app.send_static_file("index.html")
