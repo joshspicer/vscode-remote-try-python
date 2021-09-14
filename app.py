@@ -8,4 +8,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    df = pd.DataFrame
     return app.send_static_file("index.html")
